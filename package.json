@@ -1,0 +1,42 @@
+{
+  "name": "projetcloud_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest test.js --runInBand",
+    "step:1": "jest crud --runInBand",
+    "step:2": "jest pagination --runInBand",
+    "step:3": "jest search --runInBand",
+    "step:3bis": "jest perf --runInBand",
+    "specific": "jest specific --runInBand",
+    "global": "jest global --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilfb/ProjetCloud_TestIntegration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilfb/ProjetCloud_TestIntegration/issues"
+  },
+  "homepage": "https://github.com/guilfb/ProjetCloud_TestIntegration#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.7",
+    "normalize-mongoose": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^25.0.0",
+    "jest": "^25.0.0",
+    "regenerator-runtime": "0.11.0",
+    "supertest": "3.0.0"
+  }
+}
