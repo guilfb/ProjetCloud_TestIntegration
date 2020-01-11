@@ -11,7 +11,9 @@ jobs:
     - uses: actions/checkout@v1
     - name : Dependencies installation
       run: npm i 
-    - name: Server
-      run: npm run start
-    - name: Tests
+    - name: Start Server
+      run: forever start index.js
+    - name: Run Global Test
       run: npm run global
+    - name: Close Server
+      run: forever stop index.js
